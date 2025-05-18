@@ -19,7 +19,7 @@ unzip nginx-website-template.zip
 ## Setting Up the Environment
 
 ```
-cd nginx-website-template-main
+cd nginx-website-template
 ```
 
 ## Building the Docker Image
