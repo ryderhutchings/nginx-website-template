@@ -39,6 +39,8 @@ docker push yourusername/nginx-website-template
 ## Deploying Service to K3s
 To deploy the Nginx website to your K3s cluster, apply the YAML files using:
 
+**MAKE SURE TO ADD** `yourusername/nginx-website-template` **TO** `deployment.yaml`.
+
 ```
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
