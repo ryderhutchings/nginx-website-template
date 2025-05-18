@@ -28,16 +28,6 @@ cd nginx-website-template-main
 docker build -t yourusername/nginx-website-template .
 ```
 
-## Running the Docker Container
-
-```
-docker run -d -p 8080:80 yourusername/nginx-website-template
-
-Visit http://localhost:8080 to view your website.
-```
-
-Visit `http://localhost:8080` to view your website.
-
 ## Pushing the Docker Image
 
 ```
