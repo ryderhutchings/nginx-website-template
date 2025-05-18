@@ -61,5 +61,12 @@ For the port:
 kubectl get service -n <namespace>
 ```
 
+## Redeploying an Application Using kubectl Patch
+#### AKA: Restarting or Redeploying the Service
+
+```
+kubectl patch deployment <appname> -n <namespace> -p \
+  "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"kubectl.kubernetes.io/restartedAt\":\"$(date -Is)\"}}}}}"
+```
 ** Hi future me!! **
 
