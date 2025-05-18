@@ -45,3 +45,15 @@ To deploy the Nginx website to your K3s cluster, apply the YAML files using:
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 ```
+
+## Find the IP
+
+```
+kubectl get pods -o wide
+```
+
+For the port:
+```
+kubectl get service -n <namespace>
+```
+
